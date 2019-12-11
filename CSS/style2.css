@@ -1,0 +1,85 @@
+body {
+  background: url(../images/bkg_body.jpg);
+}
+.CellTit {
+  background: #192c69;
+  color: white;
+}
+.CellSpa {
+  background: #c2cae0;
+  color: black;
+}
+td,
+th {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-small;
+}
+table {
+  display: table;
+}
+.CellData,
+.CellTit,
+.CellSpa {
+  border-left: 1px solid Black;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: black;
+  border-bottom: 1px solid Black;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  font: 8pt "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-variant-ligatures: normal;
+  font-variant-caps: normal;
+  font-variant-numeric: normal;
+  font-variant-east-asian: normal;
+  font-weight: normal;
+  font-stretch: condensed;
+  font-size: 8pt;
+  line-height: normal;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-stretch: condensed;
+}
+.CellMateria {
+  align: left;
+}
+.TblBlk {
+  border-right: 1px solid Black;
+  border-top: 1px solid Black;
+}
+.tabla1 {
+  border-left: 1px solid Black;
+}
+#EUNAM {
+  margin: 0;
+}
+.TxtSdw {
+  color: Black;
+  font-family: "MS Sans Serif", Geneva, sans-serif;
+  filter: Shadow(Color=#AAAAAA, Direction=135);
+  text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+}
+span {
+  color: yellow;
+}
+.boton {
+  border-radius: 2.5px;
+  background: white;
+  padding: 1.5px;
+  display: inline-flex;
+  cursor: pointer;
+}
+.boton a {
+  text-decoration: none;
+  color: black;
+}
+#Tbl3 {
+  border-right: 1px solid Black;
+  border-top: 1px solid Black;
+}
+.CellCtrl {
+  border-left: 1px solid Black;
+  border-bottom: 1px solid Black;
+  background: silver;
+}
