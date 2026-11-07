@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 175" width="600" height="175">
+  <defs>
+    <pattern id="map" width="125" height="92" patternUnits="userSpaceOnUse" patternTransform="rotate(-19)">
+      <path fill="#e7ebdf" d="M0 0h125v92H0z"/><path fill="#d4e8d9" d="M12 6h33v28H12zm53 48h47v28H65z"/>
+      <path d="M0 43h125M53 0v92M118 0v92" fill="none" stroke="#f8faf2" stroke-width="6"/>
+    </pattern>
+    <linearGradient id="screen" x2="0" y2="1"><stop stop-color="#fff9ed"/><stop offset="1" stop-color="#ffe5bc"/></linearGradient>
+  </defs>
+  <path fill="url(#map)" d="M0 0h600v175H0z"/><path d="M-11 119C133 110 239 70 322-18" fill="none" stroke="#b6dcec" stroke-width="21"/>
+  <path transform="translate(420 78)" d="M0-23a17 17 0 0 1 17 17C17 6 0 21 0 21S-17 6-17-6A17 17 0 0 1 0-23Z" fill="#ef6549" stroke="#fff8ee" stroke-width="2"/>
+  <circle cx="420" cy="72" r="5.2" fill="#fff6e9"/>
+  <g transform="translate(77 25) rotate(-10)">
+    <rect x="5" y="4" width="132" height="226" rx="24" fill="#253448" opacity=".22"/>
+    <rect width="132" height="226" rx="23" fill="#1a2432"/><rect x="5" y="5" width="122" height="216" rx="19" fill="url(#screen)"/>
+    <rect x="45" y="8" width="42" height="9" rx="4.5" fill="#1a2432"/>
+    <text x="66" y="36" fill="#a53620" font-family="system-ui,sans-serif" font-size="12" font-weight="700" text-anchor="middle">Pizzaddiction</text>
+    <circle cx="66" cy="87" r="37" fill="#c76c29"/><circle cx="66" cy="87" r="32" fill="#f3a849"/><circle cx="66" cy="87" r="28" fill="#ffd36b"/>
+    <g fill="#bf4732"><circle cx="56" cy="71" r="5"/><circle cx="79" cy="71" r="5"/><circle cx="48" cy="91" r="5"/><circle cx="70" cy="90" r="6"/><circle cx="85" cy="99" r="5"/><circle cx="59" cy="104" r="5"/></g>
+    <g fill="#4d8b38"><path d="m52 82 6-6 1 8zm26 0 5-5 2 7zm-7 22 5-6 3 8zm-23-1 4-5 2 6z"/></g>
+    <rect x="16" y="137" width="100" height="25" rx="7" fill="#e46b3f"/>
+    <text x="66" y="153" fill="#fffaf5" font-family="system-ui,sans-serif" font-size="9" text-anchor="middle">Build your pizza</text>
+  </g>
+</svg>

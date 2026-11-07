@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 175" width="600" height="175">
+  <defs>
+    <linearGradient id="back"><stop stop-color="#09152a"/><stop offset="1" stop-color="#112d50"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#0e8ddd" stop-opacity=".35"/><stop offset="1" stop-color="#163459" stop-opacity="0"/></radialGradient>
+    <rect id="node" width="61" height="25" rx="5" fill="#103a65" stroke="#32b8f4" stroke-width="1.5"/>
+  </defs>
+  <path fill="url(#back)" d="M0 0h600v175H0z"/>
+  <ellipse cx="240" cy="95" rx="230" ry="110" fill="url(#halo)"/>
+  <g fill="none" stroke="#2babea" stroke-width="1.5"><path d="m228 43-85 38m85-38 78 38m-163 14-56 39m56-39 36 39m127-39-35 39m35-39 58 39"/></g>
+  <g><use href="#node" x="197" y="26"/><use href="#node" x="112" y="75"/><use href="#node" x="275" y="75"/><use href="#node" x="57" y="125"/><use href="#node" x="148" y="125"/><use href="#node" x="241" y="125"/><use href="#node" x="333" y="125"/></g>
+  <g fill="#dbf8ff" font-family="monospace" font-size="11" text-anchor="middle">
+    <text x="228" y="43">24</text><text x="142" y="92">12</text><text x="306" y="92">42</text>
+    <text x="87" y="142">6 | 9</text><text x="178" y="142">12 | 17</text><text x="271" y="142">24 | 31</text><text x="363" y="142">42 | 51</text>
+  </g>
+  <g transform="translate(437 18)"><rect width="146" height="139" rx="9" fill="#142d4d" stroke="#315878"/>
+    <text x="13" y="22" fill="#b4d4f4" font-family="system-ui,sans-serif" font-size="10">TREE OPERATIONS</text>
+    <g fill="#214872"><rect x="13" y="35" width="120" height="18" rx="4"/><rect x="13" y="61" width="120" height="18" rx="4"/><rect x="13" y="87" width="120" height="18" rx="4"/></g>
+    <g fill="#d1e8ff" font-family="system-ui,sans-serif" font-size="8"><text x="22" y="48">+ Insert</text><text x="22" y="74">⌕ Search</text><text x="22" y="100">− Delete</text></g>
+  </g>
+</svg>

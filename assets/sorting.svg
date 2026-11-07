@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 175" width="600" height="175">
+  <defs>
+    <linearGradient id="back"><stop stop-color="#0b192d"/><stop offset="1" stop-color="#19214e"/></linearGradient>
+    <linearGradient id="cyan" x2="0" y2="1"><stop stop-color="#47daff"/><stop offset="1" stop-color="#127fc1"/></linearGradient>
+    <linearGradient id="blue" x2="0" y2="1"><stop stop-color="#6678ff"/><stop offset="1" stop-color="#2e3bae"/></linearGradient>
+  </defs>
+  <path fill="url(#back)" d="M0 0h600v175H0z"/>
+  <path d="M44 144h512M44 114h512M44 84h512M44 54h512" fill="none" stroke="#9ab1fd" stroke-opacity=".13"/>
+  <path d="M300 22v122" fill="none" stroke="#c3cffd" stroke-dasharray="4 6"/>
+  <g fill="url(#cyan)">
+    <path d="M50 123h19v21H50zm25-15h19v36H75zm25-11h19v47h-19zm25-10h19v57h-19zm25-18h19v75h-19zm25 0h19v75h-19zm25-7h19v82h-19zm25-16h19v98h-19zm25-18h19v116h-19z"/>
+  </g>
+  <g fill="url(#blue)">
+    <path d="M332 45h19v99h-19zm25 20h19v79h-19zm25 19h19v60h-19zm25-19h19v79h-19zm25-20h19v99h-19zm25 42h19v57h-19zm25 4h19v53h-19zm25 15h19v38h-19zm25 17h19v21h-19z"/>
+  </g>
+</svg>

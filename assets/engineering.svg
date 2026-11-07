@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 440" width="680" height="440">
+  <defs>
+    <linearGradient id="glass" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#f1f6ff" stop-opacity=".78"/><stop offset="1" stop-color="#d8e6ff" stop-opacity=".34"/>
+    </linearGradient>
+    <linearGradient id="screen" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#243651"/><stop offset="1" stop-color="#101a30"/>
+    </linearGradient>
+    <linearGradient id="metal" x2=".65" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#d6e0f2"/><stop offset=".55" stop-color="#a3b4d1"/><stop offset="1" stop-color="#657b9e"/>
+    </linearGradient>
+    <linearGradient id="edge" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#64799d"/><stop offset="1" stop-color="#344a6d"/>
+    </linearGradient>
+    <radialGradient id="halo">
+      <stop stop-color="#3b67d2" stop-opacity=".36"/><stop offset=".56" stop-color="#82a8f6" stop-opacity=".23"/><stop offset="1" stop-color="#b1caff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ground" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#b2cefd" stop-opacity=".32"/><stop offset="1" stop-color="#a4bafa" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="keys" width="15" height="10" patternUnits="userSpaceOnUse">
+      <rect x="1" y="1" width="13" height="8" rx="1.6" fill="#23334f" stroke="#9baecb" stroke-width=".5"/>
+    </pattern>
+  </defs>
+  <path d="M34 204C140 47 380-17 670 7" fill="none" stroke="#8caff1" stroke-opacity=".32"/>
+  <path d="m229 184 273-168c50-31 108-25 151 20 32 34 29 73-11 100L396 299Z" fill="url(#ground)"/>
+  <path d="M39 331 469 171l170 86-313 169Z" fill="url(#ground)"/>
+  <ellipse cx="340" cy="335" rx="279" ry="86" fill="url(#halo)"/>
+
+  <g transform="translate(156 71)">
+    <rect width="96" height="96" rx="18" fill="url(#glass)" stroke="#a3bdf1" stroke-opacity=".7"/>
+    <g transform="translate(24 16)" fill="none" stroke="#2355cf" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M31 5c6 13-22 13-15 27m20-21c0 8-16 9-13 20M13 34c-10 1-14 5-4 8 12 4 32 2 36-1 4-3 0-5-3-5M9 43c2 9 8 13 16 13 9 0 16-4 19-14M5 56c-8 1-8 5 1 7 14 3 38 2 44-1"/>
+    </g>
+  </g>
+  <g transform="translate(86 182)">
+    <rect width="96" height="96" rx="18" fill="url(#glass)" stroke="#a3bdf1" stroke-opacity=".7"/>
+    <path transform="translate(21 22)" d="M25 3C8-4-3 8 1 23c3 10 4 19 14 16l4-6c0 13 3 19 10 21 9 3 16-4 14-13-3-9-4-9-2-15l4 10c11 1 9-14 7-23C50 4 39-1 25 3Z" fill="#3775a9" stroke="#f1f7ff" stroke-width="2"/>
+    <g transform="translate(21 22)" fill="none" stroke="#e9f4ff" stroke-width="1.4" stroke-linecap="round"><path d="M25 4c-3 7-3 21-6 29m15-29c6 5 6 19 7 22m-19 9c6 3 10 0 13-4"/><circle cx="15" cy="17" r="1"/><circle cx="42" cy="17" r="1"/></g>
+  </g>
+
+  <g transform="translate(270 103) matrix(1 .18 -.19 .98 0 0)">
+    <rect width="231" height="177" rx="10" fill="#19263c" stroke="#607397" stroke-width="2"/>
+    <rect x="9" y="11" width="213" height="149" rx="3" fill="url(#screen)" stroke="#3c5274"/>
+    <circle cx="115.5" cy="6" r="1.8" fill="#7084a1"/>
+    <path d="M11 25h209M32 26v133" fill="none" stroke="#3c5274"/>
+    <g fill="#6682a8"><circle cx="16" cy="18" r="1.6"/><circle cx="22" cy="18" r="1.6"/><circle cx="28" cy="18" r="1.6"/></g>
+    <text x="36" y="21" font-size="5.5" fill="#a6bbdc" font-family="monospace">Application.java</text>
+    <g fill="none" stroke-linecap="round" stroke-width="3">
+      <path stroke="#6e82a6" opacity=".65" d="M19 36h6m-6 10h6m-6 10h6m-6 10h6m-6 10h6m-6 10h6m-6 10h6m-6 10h6m-6 10h6m-6 10h6m-6 10h6m-6 10h6"/>
+      <path stroke="#529cde" d="M41 36h34m9 0h22m-64 10h17m10 0h49m9 0h18m-92 20h27m25 0h26m-80 20h12m39 0h53m-111 30h25m56 0h32m-99 20h44"/>
+      <path stroke="#71bcb3" d="M114 36h28m12 10h22m-118 10h40m38 10h48m-127 10h52m-38 10h23m-34 10h20m16 0h50m-80 10h43m-33 10h41m-62 10h40m8 10h41"/>
+      <path stroke="#c9ae77" d="M107 56h17m-37 10h10m27 10h11m-62 20h14m10 30h31"/>
+      <path stroke="#797cc3" d="M138 56h31m-17 40h31m-79 30h35m-92 20h14"/>
+    </g>
+    <path d="M6 172h219" stroke="#4c6284" opacity=".75"/>
+  </g>
+  <path d="m237 275 227 43-83 68c-4 4-12 5-18 4l-232-44c-5-1-9-4-9-8v-7Z" fill="url(#edge)" stroke="#4e6286" stroke-width="1.5"/>
+  <path d="m237 273 229 43-84 64c-5 4-12 5-19 4l-234-45c-6-1-8-5-3-8Z" fill="url(#metal)" stroke="#8299bc" stroke-width="1.4"/>
+  <path d="m228 286 189 35-41 29-190-35Z" fill="#22314b" stroke="#516784" stroke-width="2"/>
+  <g transform="translate(227 285) matrix(1 .18 -1.1 .74 0 0)">
+    <rect x="4" y="3" width="181" height="34" rx="3" fill="url(#keys)"/>
+  </g>
+  <path d="m226 331 79 15-23 17-80-15Z" fill="#a7b7d0" stroke="#738aac"/>
+  <path d="m143 343 200 38" fill="none" stroke="#d6e2f5" stroke-opacity=".52"/>
+
+  <g transform="translate(479 119)">
+    <rect width="96" height="96" rx="18" fill="url(#glass)" stroke="#91ace9" stroke-opacity=".76"/>
+    <path transform="translate(20 21)" d="M55 2C42 12 27 1 13 14 1 25 2 40 10 47L4 54l6 4 9-12C37 53 56 40 55 2ZM15 40c6-14 19-13 32-20-4 10-17 13-32 20Z" fill="#62b930"/>
+  </g>
+  <g transform="translate(517 243)">
+    <rect width="96" height="96" rx="18" fill="url(#glass)" stroke="#a3bdf1" stroke-opacity=".7"/>
+    <path transform="translate(17 18)" d="M3 27h42c0-6 3-10 7-12 2 4 6 5 11 5-1 9-7 12-13 13-4 15-17 21-30 21C8 54 2 46 3 27Zm8-9h9v7h-9zm11 0h9v7h-9zm11 0h9v7h-9zm-11-9h9v7h-9zm11 0h9v7h-9zm0-9h9v7h-9z" fill="#1596e2"/>
+  </g>
+</svg>
