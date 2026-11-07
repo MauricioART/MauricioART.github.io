@@ -25,10 +25,12 @@ function projectCards(details, assets) {
     const [name, description, tags] = details[index].map(item =>
       Array.isArray(item) ? item.map(escapeHtml) : escapeHtml(item)
     );
-    return `<article class="project">
-      <img class="project-image" src="${assets}${image}" alt="" width="600" height="175" decoding="async">
+    const projectClass = index === 0 ? "project project-featured" : "project project-compact";
+    return `<article class="${projectClass}" data-reveal>
+      <div class="project-media"><img class="project-image" src="${assets}${image}" alt="" width="600" height="175" decoding="async"></div>
       <div class="project-body">
-        <h3>${icon(glyph)} <a href="${github}${repo}">${name}</a></h3>
+        <p class="project-index">${icon(glyph)} <span>0${index + 1}</span></p>
+        <h3><a href="${github}${repo}">${name}</a></h3>
         <p>${description}</p>
         <div class="project-meta">
           <ul class="tags">${tags.map(tag => `<li>${tag}</li>`).join("")}</ul>

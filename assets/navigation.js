@@ -43,3 +43,14 @@ window.addEventListener("hashchange", syncNavigation);
 prefersDark.addEventListener("change", syncTheme);
 syncNavigation();
 syncTheme();
+
+if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+  const reveal = new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+      if (!entry.isIntersecting) continue;
+      entry.target.classList.add("is-visible");
+      reveal.unobserve(entry.target);
+    }
+  }, { threshold: 0.15 });
+  for (const item of document.querySelectorAll("[data-reveal]")) reveal.observe(item);
+}

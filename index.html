@@ -48,31 +48,20 @@
 </svg>
   <a class="skip-link" href="#home">Skip to content</a>
 
-  <aside class="sidebar">
-    <a class="brand" href="#home" aria-label="Home">
-      <img src="assets/favicon.svg" width="62" height="47" alt="">
-      <span>Mauricio Arturo <small>Aguilera Roa</small></span>
-    </a>
-    <nav class="navigation" aria-label="Main navigation">
-      <a href="#home" aria-current="location"><svg class="icon" aria-hidden="true"><use href="#i-home"/></svg> Home</a>
-      <a href="#projects"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg> Projects</a>
-      <a href="#experience"><svg class="icon" aria-hidden="true"><use href="#i-briefcase"/></svg> Experience</a>
-      <a href="#skills"><svg class="icon" aria-hidden="true"><use href="#i-stack"/></svg> Skills</a>
-      <a href="#education"><svg class="icon" aria-hidden="true"><use href="#i-school"/></svg> Education</a>
-      <a href="#contact"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg> Contact</a>
-    </nav>
-    <div class="sidebar-footer">
-      <div class="social">
-        <a href="https://github.com/MauricioART" aria-label="GitHub"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg></a>
-        <a href="https://www.linkedin.com/in/arturo-aguilera-roa-47a8821b5" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
-        <a href="#contact" aria-label="Contact"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></a>
-      </div>
-      <p>Let’s build something great together.</p>
-    </div>
-  </aside>
-
-  <main id="home" class="main" tabindex="-1">
-    <div class="page">
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#home" aria-label="Mauricio Arturo Aguilera Roa · Home">
+        <img src="assets/favicon.svg" width="44" height="33" alt="">
+        <span>Mauricio Aguilera <small>Software engineer</small></span>
+      </a>
+      <nav class="navigation" aria-label="Main navigation">
+        <a href="#home" aria-current="location">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
       <div class="preferences">
         <nav class="language" aria-label="Language">
           <a href="./index.html" lang="en" hreflang="en" aria-label="English" aria-current="page">EN</a>
@@ -83,33 +72,42 @@
           <button type="button" data-theme-option="dark" aria-pressed="false" aria-label="Dark mode" title="Dark mode"><svg class="icon" aria-hidden="true"><use href="#i-moon"/></svg></button>
         </div>
       </div>
+    </div>
+  </header>
 
-      <header class="hero" aria-labelledby="intro">
-        <div class="hero-copy">
-          <p class="availability">Available for new opportunities</p>
-          <h1 id="intro">Mauricio Arturo <span>Aguilera Roa</span></h1>
-          <p class="hero-role">Software Engineer | Java Backend Developer</p>
-          <p class="hero-summary">Computer Engineer from UNAM, focused on backend development, databases, and building efficient, scalable software.</p>
-          <div class="hero-actions">
-            <a class="button primary" href="#projects"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg> View My Projects <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-            <a class="button secondary" href="https://www.linkedin.com/in/arturo-aguilera-roa-47a8821b5"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg> Connect on LinkedIn <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-          </div>
+  <main id="home" class="shell page" tabindex="-1">
+    <header class="hero" aria-labelledby="intro">
+      <div class="hero-copy">
+        <p class="availability">Available for new opportunities</p>
+        <h1 id="intro">Mauricio Arturo <span>Aguilera Roa</span></h1>
+        <p class="hero-role">Software Engineer | Java Backend Developer</p>
+        <p class="hero-summary">Computer Engineer from UNAM, focused on backend development, databases, and building efficient, scalable software.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg> View My Projects <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="button secondary" href="https://www.linkedin.com/in/arturo-aguilera-roa-47a8821b5"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg> Connect on LinkedIn <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
-        <div class="hero-art" aria-hidden="true">
-          <img src="assets/engineering.svg" width="680" height="440" alt="">
-        </div>
-      </header>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-label"><span class="art-lights"><i></i><i></i><i></i></span><span>WORKSPACE / 01</span></div>
+        <div class="art-image"><img src="assets/engineering.svg" width="680" height="440" alt=""></div>
+        <div class="art-label"><span>JAVA / SPRING</span><span>POSTGRESQL / DOCKER</span></div>
+      </div>
+    </header>
 
-      <section id="projects" class="section" aria-labelledby="project-title">
-        <div class="section-heading">
+    <section id="projects" class="section" aria-labelledby="project-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker"><span>01</span> Selected work</p>
           <h2 id="project-title">Featured Projects</h2>
-          <a class="text-link" href="https://github.com/MauricioART?tab=repositories">Explore all projects <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
         </div>
-        <div class="project-grid">
-          <article class="project">
-      <img class="project-image" src="assets/b-plus-tree.svg" alt="" width="600" height="175" decoding="async">
+        <a class="text-link" href="https://github.com/MauricioART?tab=repositories">Explore all projects <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="project-grid">
+        <article class="project project-featured" data-reveal>
+      <div class="project-media"><img class="project-image" src="assets/b-plus-tree.svg" alt="" width="600" height="175" decoding="async"></div>
       <div class="project-body">
-        <h3><svg class="icon" aria-hidden="true"><use href="#i-cube"/></svg> <a href="https://github.com/MauricioART/B-Tree-Algorithm">B+ Tree Visualizer</a></h3>
+        <p class="project-index"><svg class="icon" aria-hidden="true"><use href="#i-cube"/></svg> <span>01</span></p>
+        <h3><a href="https://github.com/MauricioART/B-Tree-Algorithm">B+ Tree Visualizer</a></h3>
         <p>Explore how insertions, searches, and deletions work in a B+ tree with step-by-step animations.</p>
         <div class="project-meta">
           <ul class="tags"><li>Java</li><li>JavaFX</li><li>Data Structures</li></ul>
@@ -117,10 +115,11 @@
         </div>
       </div>
     </article>
-          <article class="project">
-      <img class="project-image" src="assets/sorting.svg" alt="" width="600" height="175" decoding="async">
+          <article class="project project-compact" data-reveal>
+      <div class="project-media"><img class="project-image" src="assets/sorting.svg" alt="" width="600" height="175" decoding="async"></div>
       <div class="project-body">
-        <h3><svg class="icon" aria-hidden="true"><use href="#i-bars"/></svg> <a href="https://github.com/MauricioART/External-Sorting-Algorithms">External Sorting Algorithms</a></h3>
+        <p class="project-index"><svg class="icon" aria-hidden="true"><use href="#i-bars"/></svg> <span>02</span></p>
+        <h3><a href="https://github.com/MauricioART/External-Sorting-Algorithms">External Sorting Algorithms</a></h3>
         <p>Sort files larger than available memory with polyphase merge, balanced merge, and external radix sort.</p>
         <div class="project-meta">
           <ul class="tags"><li>Java</li><li>Algorithms</li><li>Performance</li></ul>
@@ -128,10 +127,11 @@
         </div>
       </div>
     </article>
-          <article class="project">
-      <img class="project-image" src="assets/pizza.svg" alt="" width="600" height="175" decoding="async">
+          <article class="project project-compact" data-reveal>
+      <div class="project-media"><img class="project-image" src="assets/pizza.svg" alt="" width="600" height="175" decoding="async"></div>
       <div class="project-body">
-        <h3><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> <a href="https://github.com/MauricioART/Pizzaddiction">Pizzaddiction</a></h3>
+        <p class="project-index"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg> <span>03</span></p>
+        <h3><a href="https://github.com/MauricioART/Pizzaddiction">Pizzaddiction</a></h3>
         <p>An iOS app for finding pizzerias on a map, saving favorites, and creating custom pizzas.</p>
         <div class="project-meta">
           <ul class="tags"><li>Swift</li><li>UIKit</li><li>MapKit</li></ul>
@@ -139,68 +139,70 @@
         </div>
       </div>
     </article>
-        </div>
+      </div>
+    </section>
+
+    <div class="overview section">
+      <section id="about" class="panel about-panel" aria-labelledby="about-title" data-reveal>
+        <p class="section-kicker"><span>02</span> Profile</p>
+        <h2 id="about-title">About Me</h2>
+        <p>I’m a computer engineer with experience in backend development, databases, and software architecture. I enjoy working on algorithms, system design, and tools that solve practical problems.</p>
+        <a class="button outline" href="#education">Learn more about me <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <figure class="unam">
+          <img src="assets/unam.webp" width="196" height="220" alt="Coat of arms of the National Autonomous University of Mexico" decoding="async" loading="lazy">
+          <figcaption>UNAM</figcaption>
+        </figure>
       </section>
 
-      <div class="overview section">
-        <section id="about" class="panel about-panel" aria-labelledby="about-title">
-          <h2 id="about-title">About Me</h2>
-          <p>I’m a computer engineer with experience in backend development, databases, and software architecture. I enjoy working on algorithms, system design, and tools that solve practical problems.</p>
-          <a class="button outline" href="#education">Learn more about me <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-          <figure class="unam">
-            <img src="assets/unam.webp" width="196" height="220" alt="Coat of arms of the National Autonomous University of Mexico" decoding="async" loading="lazy">
-            <figcaption>UNAM</figcaption>
-          </figure>
-        </section>
-
-        <section id="skills" class="panel" aria-labelledby="skills-title">
-          <h2 id="skills-title">Tech Stack</h2>
-          <ul class="tech-grid" aria-label="Skills">
-            <li><span class="tech-icon java"><svg class="icon" aria-hidden="true"><use href="#i-java"/></svg></span>Java</li>
-            <li><span class="tech-icon spring"><svg class="icon" aria-hidden="true"><use href="#i-leaf"/></svg></span>Spring Boot</li>
-            <li><span class="tech-icon postgres" aria-hidden="true">Pg</span>PostgreSQL</li>
-            <li><span class="tech-icon docker"><svg class="icon" aria-hidden="true"><use href="#i-docker"/></svg></span>Docker</li>
-            <li><span class="tech-icon kube" aria-hidden="true">⎈</span>Kubernetes</li>
-            <li><span class="tech-icon aws" aria-hidden="true">aws</span>AWS</li>
-            <li><span class="tech-icon git"><svg class="icon" aria-hidden="true"><use href="#i-git"/></svg></span>Git</li>
-            <li><span class="tech-icon linux"><svg class="icon" aria-hidden="true"><use href="#i-terminal"/></svg></span>Linux</li>
-          </ul>
-        </section>
-      </div>
-
-      <div class="details section">
-        <section id="experience" class="panel" aria-labelledby="experience-title">
-          <h2 id="experience-title">Experience</h2>
-          <article class="timeline">
-            <p class="dates"><time datetime="2018-09">Sep 2018</time> – <time datetime="2024-06">Jun 2024</time></p>
-            <h3>Web Support Assistant</h3>
-            <p class="organization">UNAM · Faculty of Engineering</p>
-            <p>Maintained the Telecommunications Department’s website, managed content publication, and provided web support.</p>
-          </article>
-        </section>
-        <section id="education" class="panel" aria-labelledby="education-title">
-          <h2 id="education-title">Education</h2>
-          <article class="timeline">
-            <p class="dates"><time datetime="2018">2018</time> – <time datetime="2024">2024</time></p>
-            <h3>Computer Engineering</h3>
-            <p class="organization">Universidad Nacional Autónoma de México</p>
-          </article>
-          <article class="timeline">
-            <p class="dates"><time datetime="2024-08">Aug 2024</time> – <time datetime="2025-02">Feb 2025</time></p>
-            <h3>Diploma in Mobile App Development</h3>
-            <p class="organization">UNAM iOS Development Lab</p>
-          </article>
-        </section>
-      </div>
-
-      <section id="contact" class="contact panel section" aria-labelledby="contact-title">
-        <div><h2 id="contact-title">Contact</h2><p>Get in touch about a software project, collaboration, or opportunity.</p></div>
-        <div class="contact-links">
-          <a class="button secondary" href="https://github.com/MauricioART"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg> GitHub <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-          <a class="button secondary" href="https://www.linkedin.com/in/arturo-aguilera-roa-47a8821b5"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg> LinkedIn <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
-        </div>
+      <section id="skills" class="panel" aria-labelledby="skills-title" data-reveal>
+        <p class="section-kicker"><span>03</span> Tools &amp; technologies</p>
+        <h2 id="skills-title">Tech Stack</h2>
+        <ul class="tech-grid" aria-label="Skills">
+          <li><span class="tech-icon java"><svg class="icon" aria-hidden="true"><use href="#i-java"/></svg></span>Java</li>
+          <li><span class="tech-icon spring"><svg class="icon" aria-hidden="true"><use href="#i-leaf"/></svg></span>Spring Boot</li>
+          <li><span class="tech-icon postgres" aria-hidden="true">Pg</span>PostgreSQL</li>
+          <li><span class="tech-icon docker"><svg class="icon" aria-hidden="true"><use href="#i-docker"/></svg></span>Docker</li>
+          <li><span class="tech-icon kube" aria-hidden="true">⎈</span>Kubernetes</li>
+          <li><span class="tech-icon aws" aria-hidden="true">aws</span>AWS</li>
+          <li><span class="tech-icon git"><svg class="icon" aria-hidden="true"><use href="#i-git"/></svg></span>Git</li>
+          <li><span class="tech-icon linux"><svg class="icon" aria-hidden="true"><use href="#i-terminal"/></svg></span>Linux</li>
+        </ul>
       </section>
     </div>
+
+    <div class="details section">
+      <section id="experience" class="panel" aria-labelledby="experience-title" data-reveal>
+        <h2 id="experience-title">Experience</h2>
+        <article class="timeline">
+          <p class="dates"><time datetime="2018-09">Sep 2018</time> – <time datetime="2024-06">Jun 2024</time></p>
+          <h3>Web Support Assistant</h3>
+          <p class="organization">UNAM · Faculty of Engineering</p>
+          <p>Maintained the Telecommunications Department’s website, managed content publication, and provided web support.</p>
+        </article>
+      </section>
+      <section id="education" class="panel" aria-labelledby="education-title" data-reveal>
+        <h2 id="education-title">Education</h2>
+        <article class="timeline">
+          <p class="dates"><time datetime="2018">2018</time> – <time datetime="2024">2024</time></p>
+          <h3>Computer Engineering</h3>
+          <p class="organization">Universidad Nacional Autónoma de México</p>
+        </article>
+        <article class="timeline">
+          <p class="dates"><time datetime="2024-08">Aug 2024</time> – <time datetime="2025-02">Feb 2025</time></p>
+          <h3>Diploma in Mobile App Development</h3>
+          <p class="organization">UNAM iOS Development Lab</p>
+        </article>
+      </section>
+    </div>
+
+    <section id="contact" class="contact panel section" aria-labelledby="contact-title" data-reveal>
+      <div><h2 id="contact-title">Contact</h2><p>Get in touch about a software project, collaboration, or opportunity.</p></div>
+      <div class="contact-links">
+        <a class="button secondary" href="https://github.com/MauricioART"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg> GitHub <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="button secondary" href="https://www.linkedin.com/in/arturo-aguilera-roa-47a8821b5"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg> LinkedIn <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </section>
   </main>
+  <footer class="shell site-footer"><span>Mauricio Arturo Aguilera Roa</span><a href="#home">Back to top ↑</a></footer>
 </body>
 </html>

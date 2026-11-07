@@ -28,31 +28,20 @@
   {{icons}}
   <a class="skip-link" href="#home">{{skip}}</a>
 
-  <aside class="sidebar">
-    <a class="brand" href="#home" aria-label="{{home}}">
-      <img src="{{assets}}favicon.svg" width="62" height="47" alt="">
-      <span>Mauricio Arturo <small>Aguilera Roa</small></span>
-    </a>
-    <nav class="navigation" aria-label="{{navigation}}">
-      <a href="#home" aria-current="location">{{homeIcon}} {{home}}</a>
-      <a href="#projects">{{codeIcon}} {{projects}}</a>
-      <a href="#experience">{{briefcaseIcon}} {{experience}}</a>
-      <a href="#skills">{{stackIcon}} {{skills}}</a>
-      <a href="#education">{{schoolIcon}} {{education}}</a>
-      <a href="#contact">{{mailIcon}} {{contact}}</a>
-    </nav>
-    <div class="sidebar-footer">
-      <div class="social">
-        <a href="https://github.com/MauricioART" aria-label="GitHub">{{githubIcon}}</a>
-        <a href="https://www.linkedin.com/in/arturo-aguilera-roa-47a8821b5" aria-label="LinkedIn">{{linkedinIcon}}</a>
-        <a href="#contact" aria-label="{{contact}}">{{mailIcon}}</a>
-      </div>
-      <p>{{footer}}</p>
-    </div>
-  </aside>
-
-  <main id="home" class="main" tabindex="-1">
-    <div class="page">
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#home" aria-label="Mauricio Arturo Aguilera Roa · {{home}}">
+        <img src="{{assets}}favicon.svg" width="44" height="33" alt="">
+        <span>Mauricio Aguilera <small>{{brandRole}}</small></span>
+      </a>
+      <nav class="navigation" aria-label="{{navigation}}">
+        <a href="#home" aria-current="location">{{home}}</a>
+        <a href="#projects">{{projects}}</a>
+        <a href="#skills">{{skills}}</a>
+        <a href="#experience">{{experience}}</a>
+        <a href="#education">{{education}}</a>
+        <a href="#contact">{{contact}}</a>
+      </nav>
       <div class="preferences">
         <nav class="language" aria-label="{{language}}">
           <a href="{{englishHref}}" lang="en" hreflang="en" aria-label="English" {{englishCurrent}}>EN</a>
@@ -63,92 +52,102 @@
           <button type="button" data-theme-option="dark" aria-pressed="false" aria-label="{{dark}}" title="{{dark}}">{{moonIcon}}</button>
         </div>
       </div>
+    </div>
+  </header>
 
-      <header class="hero" aria-labelledby="intro">
-        <div class="hero-copy">
-          <p class="availability">{{availability}}</p>
-          <h1 id="intro">Mauricio Arturo <span>Aguilera Roa</span></h1>
-          <p class="hero-role">{{job}}</p>
-          <p class="hero-summary">{{intro}}</p>
-          <div class="hero-actions">
-            <a class="button primary" href="#projects">{{githubIcon}} {{viewProjects}} {{arrowIcon}}</a>
-            <a class="button secondary" href="https://www.linkedin.com/in/arturo-aguilera-roa-47a8821b5">{{linkedinIcon}} {{connect}} {{arrowIcon}}</a>
-          </div>
+  <main id="home" class="shell page" tabindex="-1">
+    <header class="hero" aria-labelledby="intro">
+      <div class="hero-copy">
+        <p class="availability">{{availability}}</p>
+        <h1 id="intro">Mauricio Arturo <span>Aguilera Roa</span></h1>
+        <p class="hero-role">{{job}}</p>
+        <p class="hero-summary">{{intro}}</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">{{githubIcon}} {{viewProjects}} {{arrowIcon}}</a>
+          <a class="button secondary" href="https://www.linkedin.com/in/arturo-aguilera-roa-47a8821b5">{{linkedinIcon}} {{connect}} {{arrowIcon}}</a>
         </div>
-        <div class="hero-art" aria-hidden="true">
-          <img src="{{assets}}engineering.svg" width="680" height="440" alt="">
-        </div>
-      </header>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-label"><span class="art-lights"><i></i><i></i><i></i></span><span>WORKSPACE / 01</span></div>
+        <div class="art-image"><img src="{{assets}}engineering.svg" width="680" height="440" alt=""></div>
+        <div class="art-label"><span>JAVA / SPRING</span><span>POSTGRESQL / DOCKER</span></div>
+      </div>
+    </header>
 
-      <section id="projects" class="section" aria-labelledby="project-title">
-        <div class="section-heading">
+    <section id="projects" class="section" aria-labelledby="project-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-kicker"><span>01</span> {{workLabel}}</p>
           <h2 id="project-title">{{featured}}</h2>
-          <a class="text-link" href="https://github.com/MauricioART?tab=repositories">{{allProjects}} {{arrowIcon}}</a>
         </div>
-        <div class="project-grid">
-          {{projectCards}}
-        </div>
+        <a class="text-link" href="https://github.com/MauricioART?tab=repositories">{{allProjects}} {{arrowIcon}}</a>
+      </div>
+      <div class="project-grid">
+        {{projectCards}}
+      </div>
+    </section>
+
+    <div class="overview section">
+      <section id="about" class="panel about-panel" aria-labelledby="about-title" data-reveal>
+        <p class="section-kicker"><span>02</span> {{profileLabel}}</p>
+        <h2 id="about-title">{{about}}</h2>
+        <p>{{aboutText}}</p>
+        <a class="button outline" href="#education">{{learn}} {{arrowIcon}}</a>
+        <figure class="unam">
+          <img src="{{assets}}unam.webp" width="{{crestWidth}}" height="{{crestHeight}}" alt="{{unamAlt}}" decoding="async" loading="lazy">
+          <figcaption>UNAM</figcaption>
+        </figure>
       </section>
 
-      <div class="overview section">
-        <section id="about" class="panel about-panel" aria-labelledby="about-title">
-          <h2 id="about-title">{{about}}</h2>
-          <p>{{aboutText}}</p>
-          <a class="button outline" href="#education">{{learn}} {{arrowIcon}}</a>
-          <figure class="unam">
-            <img src="{{assets}}unam.webp" width="{{crestWidth}}" height="{{crestHeight}}" alt="{{unamAlt}}" decoding="async" loading="lazy">
-            <figcaption>UNAM</figcaption>
-          </figure>
-        </section>
-
-        <section id="skills" class="panel" aria-labelledby="skills-title">
-          <h2 id="skills-title">{{techStack}}</h2>
-          <ul class="tech-grid" aria-label="{{skills}}">
-            <li><span class="tech-icon java">{{javaIcon}}</span>Java</li>
-            <li><span class="tech-icon spring">{{leafIcon}}</span>Spring Boot</li>
-            <li><span class="tech-icon postgres" aria-hidden="true">Pg</span>PostgreSQL</li>
-            <li><span class="tech-icon docker">{{dockerIcon}}</span>Docker</li>
-            <li><span class="tech-icon kube" aria-hidden="true">⎈</span>Kubernetes</li>
-            <li><span class="tech-icon aws" aria-hidden="true">aws</span>AWS</li>
-            <li><span class="tech-icon git">{{gitIcon}}</span>Git</li>
-            <li><span class="tech-icon linux">{{terminalIcon}}</span>Linux</li>
-          </ul>
-        </section>
-      </div>
-
-      <div class="details section">
-        <section id="experience" class="panel" aria-labelledby="experience-title">
-          <h2 id="experience-title">{{experience}}</h2>
-          <article class="timeline">
-            <p class="dates"><time datetime="2018-09">{{sep2018}}</time> – <time datetime="2024-06">{{jun2024}}</time></p>
-            <h3>{{webSupport}}</h3>
-            <p class="organization">UNAM · {{engineering}}</p>
-            <p>{{experienceText}}</p>
-          </article>
-        </section>
-        <section id="education" class="panel" aria-labelledby="education-title">
-          <h2 id="education-title">{{education}}</h2>
-          <article class="timeline">
-            <p class="dates"><time datetime="2018">2018</time> – <time datetime="2024">2024</time></p>
-            <h3>{{degree}}</h3>
-            <p class="organization">Universidad Nacional Autónoma de México</p>
-          </article>
-          <article class="timeline">
-            <p class="dates"><time datetime="2024-08">{{aug2024}}</time> – <time datetime="2025-02">{{feb2025}}</time></p>
-            <h3>{{diploma}}</h3>
-            <p class="organization">{{lab}}</p>
-          </article>
-        </section>
-      </div>
-
-      <section id="contact" class="contact panel section" aria-labelledby="contact-title">
-        <div><h2 id="contact-title">{{contact}}</h2><p>{{contactText}}</p></div>
-        <div class="contact-links">
-          <a class="button secondary" href="https://github.com/MauricioART">{{githubIcon}} GitHub {{arrowIcon}}</a>
-          <a class="button secondary" href="https://www.linkedin.com/in/arturo-aguilera-roa-47a8821b5">{{linkedinIcon}} LinkedIn {{arrowIcon}}</a>
-        </div>
+      <section id="skills" class="panel" aria-labelledby="skills-title" data-reveal>
+        <p class="section-kicker"><span>03</span> {{toolsLabel}}</p>
+        <h2 id="skills-title">{{techStack}}</h2>
+        <ul class="tech-grid" aria-label="{{skills}}">
+          <li><span class="tech-icon java">{{javaIcon}}</span>Java</li>
+          <li><span class="tech-icon spring">{{leafIcon}}</span>Spring Boot</li>
+          <li><span class="tech-icon postgres" aria-hidden="true">Pg</span>PostgreSQL</li>
+          <li><span class="tech-icon docker">{{dockerIcon}}</span>Docker</li>
+          <li><span class="tech-icon kube" aria-hidden="true">⎈</span>Kubernetes</li>
+          <li><span class="tech-icon aws" aria-hidden="true">aws</span>AWS</li>
+          <li><span class="tech-icon git">{{gitIcon}}</span>Git</li>
+          <li><span class="tech-icon linux">{{terminalIcon}}</span>Linux</li>
+        </ul>
       </section>
     </div>
+
+    <div class="details section">
+      <section id="experience" class="panel" aria-labelledby="experience-title" data-reveal>
+        <h2 id="experience-title">{{experience}}</h2>
+        <article class="timeline">
+          <p class="dates"><time datetime="2018-09">{{sep2018}}</time> – <time datetime="2024-06">{{jun2024}}</time></p>
+          <h3>{{webSupport}}</h3>
+          <p class="organization">UNAM · {{engineering}}</p>
+          <p>{{experienceText}}</p>
+        </article>
+      </section>
+      <section id="education" class="panel" aria-labelledby="education-title" data-reveal>
+        <h2 id="education-title">{{education}}</h2>
+        <article class="timeline">
+          <p class="dates"><time datetime="2018">2018</time> – <time datetime="2024">2024</time></p>
+          <h3>{{degree}}</h3>
+          <p class="organization">Universidad Nacional Autónoma de México</p>
+        </article>
+        <article class="timeline">
+          <p class="dates"><time datetime="2024-08">{{aug2024}}</time> – <time datetime="2025-02">{{feb2025}}</time></p>
+          <h3>{{diploma}}</h3>
+          <p class="organization">{{lab}}</p>
+        </article>
+      </section>
+    </div>
+
+    <section id="contact" class="contact panel section" aria-labelledby="contact-title" data-reveal>
+      <div><h2 id="contact-title">{{contact}}</h2><p>{{contactText}}</p></div>
+      <div class="contact-links">
+        <a class="button secondary" href="https://github.com/MauricioART">{{githubIcon}} GitHub {{arrowIcon}}</a>
+        <a class="button secondary" href="https://www.linkedin.com/in/arturo-aguilera-roa-47a8821b5">{{linkedinIcon}} LinkedIn {{arrowIcon}}</a>
+      </div>
+    </section>
   </main>
+  <footer class="shell site-footer"><span>Mauricio Arturo Aguilera Roa</span><a href="#home">{{backToTop}} ↑</a></footer>
 </body>
 </html>
