@@ -1,5 +1,20 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { locales } from "./locales.mjs";
+import { analyticsMeasurementId } from "./site-config.mjs";
+
+if (typeof analyticsMeasurementId !== "string" ||
+    (analyticsMeasurementId !== "" && !/^G-[A-Z0-9]+$/.test(analyticsMeasurementId))) {
+  throw new Error("analyticsMeasurementId must be empty or a GA4 ID starting with G-.");
+}
+
+const analyticsTag = analyticsMeasurementId ? `
+  <script async src="https://www.googletagmanager.com/gtag/js?id=${analyticsMeasurementId}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag("js", new Date());
+    gtag("config", "${analyticsMeasurementId}");
+  </script>` : "";
 
 const template = await readFile(new URL("./portfolio.html", import.meta.url), "utf8");
 const icons = await readFile(new URL("./icons.svg", import.meta.url), "utf8");
@@ -47,7 +62,7 @@ for (const [lang, { projectDetails, ...copy }] of Object.entries(locales)) {
   const assets = english ? "assets/" : "../assets/";
   const values = {
     ...Object.fromEntries(Object.entries(copy).map(([key, value]) => [key, escapeHtml(value)])),
-    lang, assets, icons: icons.trim(), crestWidth: 196, crestHeight: 220,
+    lang, assets, analyticsTag, icons: icons.trim(), crestWidth: 196, crestHeight: 220,
     englishHref: english ? "./index.html" : "../index.html",
     spanishHref: english ? "es/index.html" : "./index.html",
     englishCurrent: english ? 'aria-current="page"' : "",
